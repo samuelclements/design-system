@@ -2,6 +2,8 @@
 import { defineConfig } from 'vite';
 
 import viteTsConfigPaths from 'vite-tsconfig-paths';
+import react from '@vitejs/plugin-react'
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 export default defineConfig({
   cacheDir: './node_modules/.vite/design-system',
@@ -10,6 +12,8 @@ export default defineConfig({
     viteTsConfigPaths({
       root: './',
     }),
+    react(),
+    vanillaExtractPlugin()
   ],
 
   // Uncomment this if you are using workers.
@@ -27,6 +31,6 @@ export default defineConfig({
       dir: './node_modules/.vitest',
     },
     environment: 'node',
-    include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+    include: ['components/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
   },
 });

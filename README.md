@@ -1,11 +1,11 @@
 # design-system
 
-This library was generated with [Nx](https://nx.dev).
+Sample design system built with vanilla extract and storybook. Demonstrates a few vanilla extract features such as themes, sprinkles, variants and atoms and using these ideas to create a polymorphic `Box` component in order to easily expose reusable css properties.
 
-## Building
+## Install
 
-Run `nx build design-system` to build the library.
+Run `pnpm install` to install.
 
-## Running unit tests
+## Running storybook
 
-Run `nx test design-system` to execute the unit tests via [Jest](https://jestjs.io).
+Run `pnpm storybook` to build and run storybook. An extra global toolbar icon is available in the storybook UI that allows for changing the global theme.
