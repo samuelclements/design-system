@@ -24,6 +24,8 @@ export const buttonVariant = styleVariants({
     buttonBase,
     {
       backgroundColor: vars.color.backgroundColor,
+      borderStyle: 'solid',
+      borderWidth: '1px',
       selectors: {
         '&:hover': {
           backgroundColor: vars.color.onBackgroundHoverColor,
